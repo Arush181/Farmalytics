@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-item"><a href="#home">Home</a></div>
+      <div class="nav-item"><a href="#features">Features</a></div>
+      <div class="nav-item"><a href="#benefits">Benefits</a></div>
+      <div class="nav-item">Record</div>
+      <div class="nav-item">
+        <a href="dbms.html" target="_blank">Know More</a>
+      </div>
+    </div>
+    <div class="section1" id="home">
+      <h1>WELCOME TO</h1>
+      <h1-1>FARMALYTICS</h1-1>
+      <p>Empowering farmers with comprehensive solutions</p>
+      <button class="button get-started">
+        <a href="#section1">Get started</a>
+      </button>
+      <button class="login" id="loginBtn">Login</button>
+    </div>
+    <div id="loginForm" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h3>USER LOGIN</h3>
+        <label for="username">
+          <i class="fa fa-user"></i>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+          />
+        </label>
+        <label for="password">
+          <i class="fa fa-lock"></i>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+        </label>
+        <input type="submit" value="LOGIN" />
+      </div>
+    </div>
+
+    <div class="section" id="section1">
+      <div>
+        <h2>Predictive Analytics in Agriculture</h2>
+        <p2>
+          Exhaustive Data Analysis — Farmalytics uses historical data to predict
+          crop yield Correctness & Validness with zkML — Farmalytics makes sure
+          that the predictions are not manipulated by any third party. Optimized
+          Resource Management — Farmalytics can predict future area needs based
+          on historical data and current market conditions.</p2
+        >
+      </div>
+      <img class="img1" src="img1-1.jpg" alt="Section 2 Image" />
+    </div>
+    <div class="section2">
+      <img src="img3.jpg" alt="Section 3 Image" />
+      <div>
+        <h3>A Symbiotic Relationship in Agriculture</h3>
+        <p3>
+          Incentives for Farmers — We provide farmers with rewards based on
+          their efforts and accurate crop predictions. Data-Driven Marketplace—
+          Big companies leverage our platform to access real-time crop
+          prediction data, enabling informed business decisions. Mutually
+          Beneficial Ecosystem — This unique system connects farmers and
+          companies, fostering collaboration and shared success in the
+          agricultural sector.</p3
+        >
+      </div>
+    </div>
+    <div class="section3" id="features">
+      <h4>FEATURES</h4>
+      <p4>
+        1. Unpredictable yields: Farmers receive accurate, real-time data on
+        weather, soil, and optimal crops, leading to informed decisions and
+        increased yields.</p4
+      >
+    </div>
+    <div class="section3">
+      <p5>
+        2. Exploitative markets: Farmalytics decentralized marketplace
+        eliminates middlemen, ensuring fair prices and transparent
+        transactions.</p5
+      >
+    </div>
+    <div class="section3">
+      <p6>
+        3. Inefficient resource use: Real-time data and insights help farmers
+        optimize irrigation, fertilizer use, and other practices, reducing
+        environmental impact.
+      </p6>
+    </div>
+    <div class="section3" id="benefits">
+      <h4>BENEFITS</h4>
+      <p4>
+        1. Increased crop yields and profitability: Farmers make informed
+        decisions, eliminate exploitative practices, and optimize resource
+        use.</p4
+      >
+    </div>
+    <div class="section3">
+      <p5>
+        2. Reduced environmental impact: Optimized resource use and reduced
+        chemical reliance lead to a more sustainable agricultural sector.</p5
+      >
+    </div>
+    <div class="section3">
+      <p6>
+        3.Empowered farmers: Information, resources, and market access empower
+        farmers to make informed decisions and improve their livelihoods.
+      </p6>
+    </div>
+    <script>
+      var modal = document.getElementById("loginForm");
+      var btn = document.getElementById("loginBtn");
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

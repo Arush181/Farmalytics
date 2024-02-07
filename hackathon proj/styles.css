@@ -1,0 +1,310 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(
+    to left,
+    black,
+    rgb(75, 25, 168),
+    rgb(111, 57, 211),
+    black
+  );
+}
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+  margin-top: 20px;
+  border-bottom: 1px solid #ffffff83;
+  transition: 0.15s, 0.15s;
+  width: 1450px;
+  margin-left: 20px;
+}
+
+.nav-item {
+  color: white;
+  margin-right: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: 0.15s;
+  font-size: 19px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.nav-item:hover {
+  color: rgb(142, 139, 139);
+}
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: 0.15s;
+  font-size: 19px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.nav-item a:hover {
+  color: rgb(142, 139, 139);
+}
+.section1 {
+  padding: 100px;
+  text-align: center;
+}
+.section1 img {
+  width: 100%;
+}
+.button {
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(75, 25, 168));
+  border-color: rgb(75, 252, 252);
+  border-style: solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-right: 40px;
+  transition: all 0.2s ease;
+}
+.login {
+  background-image: linear-gradient(to left, black, rgb(75, 25, 168));
+  border-color: rgb(75, 252, 252);
+  color: white;
+  border-style: solid;
+  box-shadow: white;
+  padding: 15px 55px;
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  transition: all 0.2s ease;
+}
+.login:hover {
+  background-image: linear-gradient(to right, black, rgb(75, 25, 168));
+  box-shadow: 0px 0px 15px 5px rgba(1, 138, 145, 0.749);
+  transform: scale(1.03);
+}
+.get-started a {
+  margin-top: 30px;
+  border-color: rgb(75, 252, 252);
+  color: white;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, black, rgb(75, 25, 168));
+  box-shadow: 0px 0px 15px 5px rgba(1, 138, 145, 0.749);
+  transform: scale(1.03);
+}
+.section1 h1 {
+  color: rgba(215, 226, 224, 0.578);
+  font-size: 80px;
+  height: 90px;
+  width: 900px;
+  margin-top: 170px;
+  margin-left: 210px;
+  background: linear-gradient(to left, #a5a4a4, #615f5f, silver, #a5a3a3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: auto;
+}
+.section1 h1-1 {
+  color: rgba(215, 226, 224, 0.578);
+  font-size: 50px;
+  width: 900px;
+  margin-left: 30px;
+  font-weight: bold;
+  background: linear-gradient(to top, #a5a4a4, #615f5f, silver, #a5a3a3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: auto;
+}
+
+.section1 p {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  margin-bottom: 50px;
+  background: linear-gradient(to bottom, #e2e2e2, #4d4c4c);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: auto;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px;
+  text-align: left;
+}
+.section div {
+  width: 55%;
+  margin-right: 110px;
+}
+
+.section h2 {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  margin-bottom: 70px;
+  font-size: 30px;
+}
+
+.section p2 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.img1 {
+  border-left: 10px;
+  border-color: white;
+}
+.img2 {
+  margin-left: 110px;
+}
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 110px;
+  text-align: left;
+}
+.section2 div {
+  width: 55%;
+  margin-right: -60px;
+}
+.section2 h3 {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  margin-bottom: 70px;
+  font-size: 30px;
+}
+
+.section2 p3 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-image: linear-gradient(
+    to left,
+    rgb(128, 52, 235),
+    rgba(67, 32, 193, 0.626),
+    rgba(72, 20, 164, 0.723)
+  );
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 29px;
+  width: 30%;
+  max-width: 300px;
+}
+
+.modal-content h3 {
+  text-align: center;
+  color: silver;
+  margin-left: 10px;
+}
+
+.modal-content label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.modal-content i {
+  margin-right: 10px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-right: 17px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal-content input[type="submit"] {
+  background-image: linear-gradient(rgb(133, 0, 250), rgb(6, 5, 9));
+  font-size: 21px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgba(255, 255, 255, 0.653);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin: 8px 0;
+  margin-left: 57px;
+  border: none;
+  margin-top: 19px;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 60%;
+  font-weight: bold;
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.449);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.section3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  width: 700px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 400px;
+  font-weight: bold;
+}
+
+.section3 p4 {
+  color: rgb(196, 233, 229);
+  font-size: 24px;
+  text-align: center;
+  height: 10px;
+  font-weight: bold;
+}
+.section3 p5 {
+  color: rgb(84, 238, 204);
+  font-size: 24px;
+  text-align: center;
+}
+
+.section3 p6 {
+  color: rgb(141, 182, 243);
+  font-size: 24px;
+  text-align: center;
+}
